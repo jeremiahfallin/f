@@ -80,16 +80,24 @@ const About = () => {
           <Img fixed={edges[0].node.childImageSharp.fixed} alt={"me"} />
         </StyledAboutImage>
         <StyledText>
-          <p>hi! my name is daniella, but most people call me dani.</p>
+          <p>!</p>
+          <p>i'll replace this with a real about after i show this to you.</p>
           <p>
-            i'm a college student at SFU majoring in graphic design, and i plan
-            on getting a job in merchandise when i graduate.
+            i just wanted to let you know that even though i still haven't
+            joined call yet and we haven't really caught up, it means a lot to
+            me that you still want to be friends and kept reaching out asking if
+            i was ready yet. i would like it more if you remembered some of the
+            things you tried to message me, but i know that's not really your
+            thing.
           </p>
           <p>
-            i have this site because i'm really into digital art and i want to
-            share what i make with other people. i'm always getting better at
-            it, and if you want to see some of my other art pieces or commission
-            me you can do that here!
+            you still mean a lot to me and i'm glad we're talking again. thanks
+            for being you.
+          </p>
+          <p>
+            i made this for you because i was working on a similar thing for my
+            stepdad and i figured this was better than sending you another
+            notebook you won't use.
           </p>
         </StyledText>
       </StyledDescription>
