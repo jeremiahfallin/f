@@ -1,52 +1,40 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import Sidebar from "./Sidebar";
+import "./layout.css";
 
-import Header from "./header"
-import "./layout.css"
+const StyledLayout = styled.div`
+  display: grid;
+  font-family: Merriweather, sans-serif;
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 900px) {
+    grid-template-columns: 1fr 3fr 0fr;
+    grid-column-gap: 30px;
+    width: 100%;
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 900px) {
+    grid-template-columns: 4fr 9fr 3fr;
+    grid-column-gap: 50px;
+  }
+`;
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
+      <StyledLayout>
+        <Sidebar />
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      </StyledLayout>
     </>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

@@ -7,6 +7,8 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 article,
 aside,
@@ -41,6 +43,9 @@ template {
 }
 a {
   background-color: transparent;
+  color: #fe059a;
+  /* color: #f18d9e; */
+  text-decoration: none;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
@@ -199,7 +204,8 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  background: #f1f1f1;
+  color: hsla(0, 0%, 0%, 0.9);
   font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -208,6 +214,8 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  max-width: 100%;
+  overflow-x: hidden;
 }
 img {
   max-width: 100%;
