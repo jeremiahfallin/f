@@ -95,9 +95,9 @@ const Commissions = () => {
     emailjs
       .send(
         "fcommissions",
-        "process.env.TEMPLATE",
+        process.env.TEMPLATE,
         templateParams,
-        "process.env.USER"
+        process.env.USER
       )
       .then(
         response => {
