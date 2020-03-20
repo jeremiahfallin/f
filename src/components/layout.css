@@ -1,7 +1,12 @@
 html {
   font-family: sans-serif;
+  overflow-x: initial;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+}
+html {
+  font: 112.5%/1.45em georgia, serif;
+  box-sizing: border-box;
 }
 body {
   margin: 0;
@@ -189,11 +194,7 @@ textarea {
   -webkit-appearance: button;
   font: inherit;
 }
-html {
-  font: 112.5%/1.45em georgia, serif;
-  box-sizing: border-box;
-  overflow-y: scroll;
-}
+
 * {
   box-sizing: inherit;
 }
